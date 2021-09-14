@@ -80,6 +80,7 @@
 /home/nano/catkin_ws/build/ros_learning/CMakeFiles/ros_learning_gencpp.dir
 /home/nano/catkin_ws/build/ros_learning/CMakeFiles/install/local.dir
 /home/nano/catkin_ws/build/ros_learning/CMakeFiles/_ros_learning_generate_messages_check_deps_servo.dir
+/home/nano/catkin_ws/build/ros_learning/CMakeFiles/_ros_learning_generate_messages_check_deps_MotorAngle.dir
 /home/nano/catkin_ws/build/ros_learning/CMakeFiles/_ros_learning_generate_messages_check_deps_Num.dir
 /home/nano/catkin_ws/build/ros_learning/CMakeFiles/list_install_components.dir
 /home/nano/catkin_ws/build/ros_learning/CMakeFiles/ros_learning_generate_messages_lisp.dir

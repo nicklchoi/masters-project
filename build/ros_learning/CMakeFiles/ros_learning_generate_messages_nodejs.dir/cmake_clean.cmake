@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_learning_generate_messages_nodejs"
   "/home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/Num.js"
+  "/home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js"
   "/home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv/servo.js"
 )
 

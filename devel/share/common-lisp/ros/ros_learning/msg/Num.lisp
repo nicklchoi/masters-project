@@ -147,10 +147,10 @@
   "3dbc71f4adf6d91823c26a117a2b6ba4")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Num>)))
   "Returns full string definition for message of type '<Num>"
-  (cl:format cl:nil "int64 num~%int32 fsr1~%int32 fsr2~%int32[] fsr_raw~%~%~%"))
+  (cl:format cl:nil "int64 num~%int32 fsr1~%int32 fsr2~%int32[] fsr_raw~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Num)))
   "Returns full string definition for message of type 'Num"
-  (cl:format cl:nil "int64 num~%int32 fsr1~%int32 fsr2~%int32[] fsr_raw~%~%~%"))
+  (cl:format cl:nil "int64 num~%int32 fsr1~%int32 fsr2~%int32[] fsr_raw~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Num>))
   (cl:+ 0
      8

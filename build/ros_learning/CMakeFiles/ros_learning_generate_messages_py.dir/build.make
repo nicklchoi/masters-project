@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/nano/catkin_ws/build
 include ros_learning/CMakeFiles/ros_learning_generate_messages_py.dir/progress.make
 
 ros_learning/CMakeFiles/ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_Num.py
+ros_learning/CMakeFiles/ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py
 ros_learning/CMakeFiles/ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/_servo.py
 ros_learning/CMakeFiles/ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py
 ros_learning/CMakeFiles/ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py
@@ -64,25 +65,34 @@ ros_learning/CMakeFiles/ros_learning_generate_messages_py: /home/nano/catkin_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG ros_learning/Num"
 	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/nano/catkin_ws/src/ros_learning/msg/Num.msg -Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_learning -o /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg
 
+/home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py: /home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg
+/home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG ros_learning/MotorAngle"
+	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg -Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_learning -o /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg
+
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/_servo.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/_servo.py: /home/nano/catkin_ws/src/ros_learning/srv/servo.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV ros_learning/servo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV ros_learning/servo"
 	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/nano/catkin_ws/src/ros_learning/srv/servo.srv -Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_learning -o /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv
 
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_Num.py
+/home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/_servo.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for ros_learning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for ros_learning"
 	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg --initpy
 
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_Num.py
+/home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py
 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/_servo.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for ros_learning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for ros_learning"
 	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv --initpy
 
 ros_learning_generate_messages_py: ros_learning/CMakeFiles/ros_learning_generate_messages_py
 ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_Num.py
+ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py
 ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/_servo.py
 ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py
 ros_learning_generate_messages_py: /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py

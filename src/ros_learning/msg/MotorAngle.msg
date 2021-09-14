@@ -1,0 +1,12 @@
+std_msgs/Header header
+int32 motor1
+int32 motor2
+int32 motor3
+int32 motor4
+int32 motor5
+int32 motor6
+int32 motor7
+int32 motor8
+int32 motor9
+int32 motor10
+

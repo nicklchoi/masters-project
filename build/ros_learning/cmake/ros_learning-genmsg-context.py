@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
+messages_str = "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg;/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
 services_str = "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv"
 pkg_name = "ros_learning"
 dependencies_str = "std_msgs"

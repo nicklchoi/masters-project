@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import rospy
-from motor_driver import MotorDriver
+from test_motor_driver import MotorDriver
 
 from std_msgs.msg import Int32
 from std_srvs.srv import Trigger

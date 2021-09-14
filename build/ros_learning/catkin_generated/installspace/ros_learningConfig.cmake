@@ -185,7 +185,7 @@ foreach(t ${ros_learning_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "rospy;std_msgs;my_robot_msgs")
+set(depends "rospy;std_msgs;my_robot_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

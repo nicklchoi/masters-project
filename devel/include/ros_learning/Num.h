@@ -168,6 +168,7 @@ struct Definition< ::ros_learning::Num_<ContainerAllocator> >
 "int32 fsr1\n"
 "int32 fsr2\n"
 "int32[] fsr_raw\n"
+"\n"
 ;
   }
 

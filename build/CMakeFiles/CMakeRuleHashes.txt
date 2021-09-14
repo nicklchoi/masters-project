@@ -6,6 +6,7 @@ ff49518d57fd1d3749e42a5cce35708b /home/nano/catkin_ws/devel/include/my_robot_msg
 0e2eae6de79ff7f37f8f40e093c72de2 /home/nano/catkin_ws/devel/include/my_robot_msgs/CountUntilFeedback.h
 ec5e36004c6119675311c011d7d78b64 /home/nano/catkin_ws/devel/include/my_robot_msgs/CountUntilGoal.h
 4c4b31d4b9e7b06c79b57f3a4e01d9c5 /home/nano/catkin_ws/devel/include/my_robot_msgs/CountUntilResult.h
+bdfd8b01798b52cb41765a729fd7b717 /home/nano/catkin_ws/devel/include/ros_learning/MotorAngle.h
 716989470d070539d6113c850e514fb6 /home/nano/catkin_ws/devel/include/ros_learning/Num.h
 f587bb78fc71e7d74b3eeb61f81d06b4 /home/nano/catkin_ws/devel/include/ros_learning/servo.h
 c7e964240ffb2ef9bc717eda888ec341 /home/nano/catkin_ws/devel/include/rpi_ros_tutorials/AddTwoInts.h
@@ -18,6 +19,7 @@ dee225c0690bec57f2fcb6bf4204ae87 /home/nano/catkin_ws/devel/lib/python3/dist-pac
 0cae3d840dd7407f0fc55775c612d3fb /home/nano/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_CountUntilGoal.py
 ab531fa0d096d3a6925e30d5da29b5c7 /home/nano/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_CountUntilResult.py
 fb070ca56defa10fc57da0f5b3acc6d7 /home/nano/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/__init__.py
+6e0d423b589927d8981d792fdf00c8cc /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_MotorAngle.py
 c7facb2225cc794ff6c376bfc8941136 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/_Num.py
 b2577edfb57de1d7f7e830e6d1877f2e /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/msg/__init__.py
 cc0bd18e9aad1c1b037372d47d53da36 /home/nano/catkin_ws/devel/lib/python3/dist-packages/ros_learning/srv/__init__.py
@@ -33,6 +35,7 @@ a052c0883df702003b1a7ddaaa46b40c /home/nano/catkin_ws/devel/share/common-lisp/ro
 43a12f34fcdb75160937a857994484ab /home/nano/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/msg/CountUntilFeedback.lisp
 06c84b7f6deeb7b3e5b0525bca8457e8 /home/nano/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/msg/CountUntilGoal.lisp
 f91f1b76a5b678c16e7ea4734743ce2f /home/nano/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/msg/CountUntilResult.lisp
+d49c4b8a7e4845fb23168cfb9fdb335b /home/nano/catkin_ws/devel/share/common-lisp/ros/ros_learning/msg/MotorAngle.lisp
 d523ebf98435926626d5d13f18161f56 /home/nano/catkin_ws/devel/share/common-lisp/ros/ros_learning/msg/Num.lisp
 14a128f5f3324e7f3c6061b54977159f /home/nano/catkin_ws/devel/share/common-lisp/ros/ros_learning/srv/servo.lisp
 a748825166e43a573f3f342872178459 /home/nano/catkin_ws/devel/share/common-lisp/ros/rpi_ros_tutorials/msg/Num.lisp
@@ -44,6 +47,7 @@ a142716187f9720a74d980929bf4029f /home/nano/catkin_ws/devel/share/gennodejs/ros/
 6ef3e1ab2b1b355996fe479cccfa4fe2 /home/nano/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/CountUntilFeedback.js
 c7d3820cb47ba27eae021d876c1be526 /home/nano/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/CountUntilGoal.js
 edab5704fc156db10a428d196346703c /home/nano/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/CountUntilResult.js
+7265c4c88c5677b3c5a630dc434345ee /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js
 9c0b37e0d7ca6103af68f40e6bed747c /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/Num.js
 3b6aaf93ff92da9cbb5db02d32b24fb1 /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv/servo.js
 5ba26224c4ee0ded43b33f389cfb166b /home/nano/catkin_ws/devel/share/gennodejs/ros/rpi_ros_tutorials/msg/Num.js
@@ -57,16 +61,17 @@ c0ce5dfd1a22c88b5b80ed7c01166141 /home/nano/catkin_ws/devel/share/roseus/ros/my_
 2c4660930d62d586af6ebf8229f513da /home/nano/catkin_ws/devel/share/roseus/ros/my_robot_msgs/msg/CountUntilGoal.l
 e084dbf66b2e59dba26ce427558b0294 /home/nano/catkin_ws/devel/share/roseus/ros/my_robot_msgs/msg/CountUntilResult.l
 5ea20044e2881baff788ab4c001e834c /home/nano/catkin_ws/devel/share/roseus/ros/ros_learning/manifest.l
+068472ad617a7169918486fc2a2531f1 /home/nano/catkin_ws/devel/share/roseus/ros/ros_learning/msg/MotorAngle.l
 848a8eed7dfcc7935ad9eacbe8d61712 /home/nano/catkin_ws/devel/share/roseus/ros/ros_learning/msg/Num.l
 3671d5722c40ea45e16bb8eb59a19371 /home/nano/catkin_ws/devel/share/roseus/ros/ros_learning/srv/servo.l
 763be92db345c740b838e23a71cd2655 /home/nano/catkin_ws/devel/share/roseus/ros/rpi_ros_tutorials/manifest.l
 cc2398be237d3dd0b2ca1ccd0d201e3d /home/nano/catkin_ws/devel/share/roseus/ros/rpi_ros_tutorials/msg/Num.l
 f5a3d0b0c0bb22e15e31870f16ea0313 /home/nano/catkin_ws/devel/share/roseus/ros/rpi_ros_tutorials/srv/AddTwoInts.l
 1c601b7551590afb0e0c1aa749f6f22c CMakeFiles/clean_test_results
-de20dc3f754e6785bfbe1552af0d810f my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilAction
-8e94e73c66f1a62052943a07aab95b1a my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilActionFeedback
-7027d80c7e6900090dc2237627ea9554 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilActionGoal
-8604370ad92275467677fcd07362bb69 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilActionResult
+1ce675849ac0abaed2a0240948317394 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilAction
+54abf730ab40a19341e743a649982d5a my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilActionFeedback
+12ae61af7b9f45e7e9cc0cb39341b2e5 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilActionGoal
+de74054e5262dd2415b1a4c5c39970c3 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilActionResult
 96e6465c1f4526ffa394a4f78b7f9e13 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilFeedback
 b6673e91260ad7d3c8998e04fb3495f6 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilGoal
 29ba4e742c0d5e80a9bfb6eeb124274b my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_CountUntilResult
@@ -75,6 +80,7 @@ ca68182bcf40665fceacd55c2535c05a my_robot_msgs/CMakeFiles/my_robot_msgs_generate
 ca68182bcf40665fceacd55c2535c05a my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_lisp
 ca68182bcf40665fceacd55c2535c05a my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs
 ca68182bcf40665fceacd55c2535c05a my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py
+01617668821f6899afdb38880b6a764f ros_learning/CMakeFiles/_ros_learning_generate_messages_check_deps_MotorAngle
 30c8a183ec606b1132044c4ad54243c6 ros_learning/CMakeFiles/_ros_learning_generate_messages_check_deps_Num
 77d0f18d1cd352698b9253e7233a6958 ros_learning/CMakeFiles/_ros_learning_generate_messages_check_deps_servo
 40ffc567b3e321e146e0cc78c90c5d8b ros_learning/CMakeFiles/ros_learning_generate_messages_cpp

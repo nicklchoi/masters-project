@@ -15,6 +15,7 @@ class Num(genpy.Message):
 int32 fsr1
 int32 fsr2
 int32[] fsr_raw
+
 """
   __slots__ = ['num','fsr1','fsr2','fsr_raw']
   _slot_types = ['int64','int32','int32','int32[]']

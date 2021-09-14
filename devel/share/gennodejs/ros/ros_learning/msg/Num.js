@@ -103,6 +103,7 @@ class Num {
     int32 fsr2
     int32[] fsr_raw
     
+    
     `;
   }
 

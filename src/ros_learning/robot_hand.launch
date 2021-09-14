@@ -1,0 +1,7 @@
+<launch>
+    <node name="motor1_angle_sub" pkg="ros_learning" type="robot_motor1.py" output="screen"/>
+    <node name="motor2_angle_sub" pkg="ros_learning" type="robot_motor2.py" output="screen"/>
+    <node name="motor3_angle_sub" pkg="ros_learning" type="robot_motor3.py" output="screen"/>
+    <node name="motor4_angle_sub" pkg="ros_learning" type="robot_motor4.py" output="screen"/>
+    <node name="fsr_pub" pkg="ros_learning" type="fsr_test.py" output="screen"/>
+</launch>

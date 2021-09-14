@@ -42,7 +42,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learning/msg" TYPE FILE FILES "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learning/msg" TYPE FILE FILES
+    "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
+    "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "ros_learning: 1 messages, 1 services")
+message(STATUS "ros_learning: 2 messages, 1 services")
 
 set(MSG_I_FLAGS "-Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_ros_learning_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_learning" "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg" ""
 )
 
+get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" NAME_WE)
+add_custom_target(_ros_learning_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_learning" "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" "std_msgs/Header"
+)
+
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" NAME_WE)
 add_custom_target(_ros_learning_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_learning" "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" ""
@@ -37,6 +42,12 @@ _generate_msg_cpp(ros_learning
   "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_learning
+)
+_generate_msg_cpp(ros_learning
+  "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_learning
 )
 
@@ -62,6 +73,8 @@ add_dependencies(ros_learning_generate_messages ros_learning_generate_messages_c
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg" NAME_WE)
 add_dependencies(ros_learning_generate_messages_cpp _ros_learning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" NAME_WE)
+add_dependencies(ros_learning_generate_messages_cpp _ros_learning_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" NAME_WE)
 add_dependencies(ros_learning_generate_messages_cpp _ros_learning_generate_messages_check_deps_${_filename})
 
@@ -78,6 +91,12 @@ _generate_msg_eus(ros_learning
   "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ros_learning
+)
+_generate_msg_eus(ros_learning
+  "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ros_learning
 )
 
@@ -103,6 +122,8 @@ add_dependencies(ros_learning_generate_messages ros_learning_generate_messages_e
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg" NAME_WE)
 add_dependencies(ros_learning_generate_messages_eus _ros_learning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" NAME_WE)
+add_dependencies(ros_learning_generate_messages_eus _ros_learning_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" NAME_WE)
 add_dependencies(ros_learning_generate_messages_eus _ros_learning_generate_messages_check_deps_${_filename})
 
@@ -119,6 +140,12 @@ _generate_msg_lisp(ros_learning
   "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_learning
+)
+_generate_msg_lisp(ros_learning
+  "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_learning
 )
 
@@ -144,6 +171,8 @@ add_dependencies(ros_learning_generate_messages ros_learning_generate_messages_l
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg" NAME_WE)
 add_dependencies(ros_learning_generate_messages_lisp _ros_learning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" NAME_WE)
+add_dependencies(ros_learning_generate_messages_lisp _ros_learning_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" NAME_WE)
 add_dependencies(ros_learning_generate_messages_lisp _ros_learning_generate_messages_check_deps_${_filename})
 
@@ -160,6 +189,12 @@ _generate_msg_nodejs(ros_learning
   "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ros_learning
+)
+_generate_msg_nodejs(ros_learning
+  "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ros_learning
 )
 
@@ -185,6 +220,8 @@ add_dependencies(ros_learning_generate_messages ros_learning_generate_messages_n
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg" NAME_WE)
 add_dependencies(ros_learning_generate_messages_nodejs _ros_learning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" NAME_WE)
+add_dependencies(ros_learning_generate_messages_nodejs _ros_learning_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" NAME_WE)
 add_dependencies(ros_learning_generate_messages_nodejs _ros_learning_generate_messages_check_deps_${_filename})
 
@@ -201,6 +238,12 @@ _generate_msg_py(ros_learning
   "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_learning
+)
+_generate_msg_py(ros_learning
+  "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_learning
 )
 
@@ -225,6 +268,8 @@ add_dependencies(ros_learning_generate_messages ros_learning_generate_messages_p
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/Num.msg" NAME_WE)
+add_dependencies(ros_learning_generate_messages_py _ros_learning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg" NAME_WE)
 add_dependencies(ros_learning_generate_messages_py _ros_learning_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/nano/catkin_ws/src/ros_learning/srv/servo.srv" NAME_WE)
 add_dependencies(ros_learning_generate_messages_py _ros_learning_generate_messages_check_deps_${_filename})

@@ -53,6 +53,7 @@ catkin_python_setup()
 add_message_files(
    FILES
    Num.msg
+   MotorAngle.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -107,7 +108,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES ros_learning
-  CATKIN_DEPENDS rospy std_msgs my_robot_msgs
+  CATKIN_DEPENDS rospy std_msgs my_robot_msgs message_runtime
 #  DEPENDS system_lib
 )
 

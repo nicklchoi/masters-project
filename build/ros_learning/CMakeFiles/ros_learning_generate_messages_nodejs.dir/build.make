@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/nano/catkin_ws/build
 include ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs.dir/progress.make
 
 ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs: /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/Num.js
+ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs: /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js
 ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs: /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv/servo.js
 
 
@@ -62,13 +63,20 @@ ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs: /home/nano/catkin
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from ros_learning/Num.msg"
 	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/nano/catkin_ws/src/ros_learning/msg/Num.msg -Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_learning -o /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg
 
+/home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js: /home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg
+/home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ros_learning/MotorAngle.msg"
+	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/nano/catkin_ws/src/ros_learning/msg/MotorAngle.msg -Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_learning -o /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg
+
 /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv/servo.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv/servo.js: /home/nano/catkin_ws/src/ros_learning/srv/servo.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ros_learning/servo.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nano/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from ros_learning/servo.srv"
 	cd /home/nano/catkin_ws/build/ros_learning && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/nano/catkin_ws/src/ros_learning/srv/servo.srv -Iros_learning:/home/nano/catkin_ws/src/ros_learning/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_learning -o /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv
 
 ros_learning_generate_messages_nodejs: ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs
 ros_learning_generate_messages_nodejs: /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/Num.js
+ros_learning_generate_messages_nodejs: /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/msg/MotorAngle.js
 ros_learning_generate_messages_nodejs: /home/nano/catkin_ws/devel/share/gennodejs/ros/ros_learning/srv/servo.js
 ros_learning_generate_messages_nodejs: ros_learning/CMakeFiles/ros_learning_generate_messages_nodejs.dir/build.make
 
